@@ -38,11 +38,10 @@ class BankManagementSystem {
     }
 }
 public class ATM {
-     public BankManagementSystem account;
-     //private Scanner sc;
+     //public BankManagementSystem account;
+     
      public ATM(BankManagementSystem bank) {
-        //this.account = account;
-        //this.Scanner = new Scanner(System.in);
+        
      }
     //double balc;
     public void start() {

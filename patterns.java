@@ -66,7 +66,7 @@ public class patterns {
         }
         System.out.println();
       }  */
-      //0 - 1 traigle
+      //0 - 1 traigle  i=row
       int n =5;
       for(int i=1; i<=n; i++){
         for(int j=1; j<=i; j++) {
