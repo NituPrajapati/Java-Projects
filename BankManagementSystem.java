@@ -3,9 +3,9 @@ import java.util.Scanner;
 class BankManagementSystem {
     public double balance;
     Scanner sc= new Scanner(System.in);
-    //public static void start();
-    public BankManagementSystem(double Balance){
-      this.balance = Balance;
+    
+    public BankManagementSystem(double balance){
+      this.balance = balance;
     }
     public void checkBalance(double balance) {
 
@@ -17,9 +17,9 @@ class BankManagementSystem {
     //double bal;
     System.out.println("Enter money:");
     double balc = sc.nextDouble();
-    if(balance > 0) {
-    balc =+ balance;
-    checkBalance(balc);
+    if(balance >= 0) {
+    balance += balc;
+    checkBalance(balance);
     }
     else {
         System.out.println("Invalid Deposit");
@@ -29,8 +29,8 @@ class BankManagementSystem {
     public void Withdrawl(double amount)
     {
       if(amount > 0 && amount <= balance ){
-      amount  -= balance;
-      checkBalance(amount);
+      balance  -= amount;
+      checkBalance(balance);
     }
     else {
         System.out.println("Invalid withdrawl money");
@@ -38,14 +38,12 @@ class BankManagementSystem {
     }
 }
 public class ATM {
-     //public BankManagementSystem account;
      
      public ATM(BankManagementSystem bank) {
         
      }
-    //double balc;
+   
     public void start() {
-        //bank.Start();
         boolean exit = false;
         while(!exit) {
      System.out.println("Enter the ATM Menu :");
@@ -68,7 +66,7 @@ public class ATM {
             break;
         case 4:
            exit = true;
-           System.out.println("Thank you for visit our Bank Management system.");
+           System.out.println("Thank you for visit the Bank Management system.");
            break;
         default:
         System.out.println("Invalid number,Please Enter Correct number");
