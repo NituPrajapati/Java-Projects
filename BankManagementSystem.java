@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class BankManagementSystem {
-    public double balance;
+    private double balance;
     Scanner sc= new Scanner(System.in);
     
     public BankManagementSystem(double balance){
