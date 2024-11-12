@@ -37,9 +37,9 @@ class BankManagementSystem {
         
     }
 }
-public class ATM {
+private class Account {
      
-     public ATM(BankManagementSystem bank) {
+     public Account(BankManagementSystem bank) {
         
      }
    
@@ -80,7 +80,7 @@ public class ATM {
     public static void main(String[] args) {
         BankManagementSystem account = new BankManagementSystem(1000);
         //account.new atm();
-        ATM atm = account.new ATM(account);
+        Account atm = account.new Account(account);
         atm.start();
      }
 }

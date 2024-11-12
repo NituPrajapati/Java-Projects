@@ -16,7 +16,7 @@ public class LibraryManagementSystem {
        //books.add("Spring in Action");    //Craig Walls
        
         while(true){
-        System.out.println("****Welcome To Library****");
+        
         System.out.println("1. Search Boooks.");
         System.out.println("2. Add Books.");
         System.out.println("3. Remove Books.");
@@ -27,13 +27,17 @@ public class LibraryManagementSystem {
             case 1:
             System.out.println("Enter the Book Name Which you want to Search in library :");
             String i=sc.next();
+            
             books.contains(i);
                 break;
 
             case 2:
             System.out.println("Enter the Book Name Which you want to add in library :");
             String j=sc.next();
-            books.add(j);
+            
+            
+                books.add(j);
+        
                 break;
             case 3:
             System.out.println("Enter the Book Name Which you want to Remove from library :");
@@ -55,9 +59,9 @@ public class LibraryManagementSystem {
             default:
             System.out.println("Please Enter Valid Number....");
                 break;
-        }
-        }
-        
-       }
-       }
+        } 
+    }
+}
+
+}
 
